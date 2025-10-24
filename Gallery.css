@@ -64,7 +64,7 @@
     margin-top: 6px;
     padding: 14px 20px;
 }
-.sidebar_menu .menu i,a{
+.sidebar_menu .menu i, .sidebar_menu .menu a{
     color:white;
     text-decoration: none;
     font-size: 20px;
@@ -84,7 +84,7 @@
     opacity: 0.5;
     padding: 0 5px;
 }
-#check{
+.check{
     display: none;
 }
 .sidebar_menu .menu li:hover{
@@ -120,6 +120,10 @@
     display: flex;
     flex-direction: column;
     align-items: stretch;
+    transition: all 0.3s linear;
+}
+.card:hover{
+    box-shadow: 0 0 8px rgba(56, 54, 54, 0.6);
 }
 .card-container{
     display: flex;
@@ -142,9 +146,116 @@
     overflow-y: auto;
     overflow-x: hidden;
 }
-#trial{
-    height: 8rem;
-    width: 14rem;
-    background-color: rgba(20, 184, 196, 0.24);
-    z-index: 10;
-}   
+/* (legacy #display-container ID removed) */
+
+.display-container {
+    position: fixed;
+    background-color: rgba(156, 151, 151, 0.367);
+    top: 2.5rem;
+    left: 2.5rem;
+    bottom: 2.5rem;
+    right: 2.5rem;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.25s ease-in-out;
+}
+.cross-btn{
+    position: absolute;
+    top: 0.1rem;
+    right: 1rem;
+    opacity: 0;
+    color:whitesmoke;
+    font-size: 25px;
+    line-height: 60px;
+}
+.cross-position{
+    top: 1rem;
+    right: 1rem;
+}
+.display-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+#check1:checked ~ #display-container1,
+#check2:checked ~ #display-container2,
+#check3:checked ~ #display-container3,
+#check4:checked ~ #display-container4,
+#check5:checked ~ #display-container5,
+#check6:checked ~ #display-container6,
+#check7:checked ~ #display-container7,
+#check8:checked ~ #display-container8,
+#check9:checked ~ #display-container9,
+#check10:checked ~ #display-container10,
+#check11:checked ~ #display-container11,
+#check12:checked ~ #display-container12,
+#check13:checked ~ #display-container13,
+#check14:checked ~ #display-container14,
+#check15:checked ~ #display-container15,
+#check16:checked ~ #display-container16,
+#check17:checked ~ #display-container17,
+#check18:checked ~ #display-container18,
+#check19:checked ~ #display-container19,
+#check20:checked ~ #display-container20,
+#check21:checked ~ #display-container21,
+#check22:checked ~ #display-container22,
+#check23:checked ~ #display-container23,
+#check24:checked ~ #display-container24,
+#check25:checked ~ #display-container25,
+#check26:checked ~ #display-container26,
+#check27:checked ~ #display-container27,
+#check28:checked ~ #display-container28,
+#check29:checked ~ #display-container29,
+#check30:checked ~ #display-container30,
+#check31:checked ~ #display-container31,
+#check32:checked ~ #display-container32,
+#check33:checked ~ #display-container33,
+#check34:checked ~ #display-container34{
+    opacity: 1;
+    pointer-events: all;
+    visibility: visible;
+}
+
+#check1:checked ~ #display-container1 .cross-btn,
+#check2:checked ~ #display-container2 .cross-btn,
+#check3:checked ~ #display-container3 .cross-btn,
+#check4:checked ~ #display-container4 .cross-btn,
+#check5:checked ~ #display-container5 .cross-btn,
+#check6:checked ~ #display-container6 .cross-btn,
+#check7:checked ~ #display-container7 .cross-btn,
+#check8:checked ~ #display-container8 .cross-btn,
+#check9:checked ~ #display-container9 .cross-btn,
+#check10:checked ~ #display-container10 .cross-btn,
+#check11:checked ~ #display-container11 .cross-btn,
+#check12:checked ~ #display-container12 .cross-btn,
+#check13:checked ~ #display-container13 .cross-btn,
+#check14:checked ~ #display-container14 .cross-btn,
+#check15:checked ~ #display-container15 .cross-btn,
+#check16:checked ~ #display-container16 .cross-btn,
+#check17:checked ~ #display-container17 .cross-btn,
+#check18:checked ~ #display-container18 .cross-btn,
+#check19:checked ~ #display-container19 .cross-btn,
+#check20:checked ~ #display-container20 .cross-btn,
+#check21:checked ~ #display-container21 .cross-btn,
+#check22:checked ~ #display-container22 .cross-btn,
+#check23:checked ~ #display-container23 .cross-btn,
+#check24:checked ~ #display-container24 .cross-btn,
+#check25:checked ~ #display-container25 .cross-btn,
+#check26:checked ~ #display-container26 .cross-btn,
+#check27:checked ~ #display-container27 .cross-btn,
+#check28:checked ~ #display-container28 .cross-btn,
+#check29:checked ~ #display-container29 .cross-btn,
+#check30:checked ~ #display-container30 .cross-btn,
+#check31:checked ~ #display-container31 .cross-btn,
+#check32:checked ~ #display-container32 .cross-btn,
+#check33:checked ~ #display-container33 .cross-btn,
+#check34:checked ~ #display-container34 .cross-btn{
+    opacity: 1;
+}
