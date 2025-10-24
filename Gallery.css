@@ -124,6 +124,7 @@
 }
 .card:hover{
     box-shadow: 0 0 8px rgba(56, 54, 54, 0.6);
+    transform: scale(1.05);
 }
 .card-container{
     display: flex;
@@ -259,3 +260,4 @@
 #check34:checked ~ #display-container34 .cross-btn{
     opacity: 1;
 }
+
