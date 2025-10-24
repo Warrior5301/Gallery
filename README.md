@@ -6,7 +6,7 @@ It uses the **checkbox trick** (or alternatively the `:target` selector) — no 
 ---
 
 ## 🚀 Features
-
+- 👌Sidebar menu for easy navigation over pages with hover effects
 - 📷 Click any image to view it in a larger lightbox popup  
 - 🧭 Simple, clean layout built with HTML & CSS only  
 - 💡 Fully functional using the `checkbox` or `:target` pseudo-class  
@@ -44,6 +44,7 @@ When the image is clicked:
 1. The checkbox becomes checked (`:checked` selector triggers CSS).
 2. The lightbox container’s opacity changes from `0 → 1`.
 3. The corresponding image is displayed in full size.
+4. Same logic is for sidebar menu but in that it's initial position is -300px in starting and later it becomes 0.
 
 ### 🧩 Key Concept:
 ```css
