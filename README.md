@@ -71,24 +71,43 @@ Using only CSS, **each image must have its own container** (or predefined sectio
 Example snippet:
 
 ```css
-.gallery img {
-  width: 200px;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-}
-
-.gallery img:hover {
-  transform: scale(1.05);
-}
-
-#container {
-  position: fixed;
-  inset: 0;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(0, 0, 0, 0.8);
-}
+.card{
+        background-color: rgba(255,255,255, 0.5);
+        width: 150px;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        margin-left: 1.5rem;
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        transition: all 0.3s linear;
+    }
+    .card:hover{
+        box-shadow: 0 0 8px rgba(56, 54, 54, 0.6);
+        transform: scale(1.05);
+    }
+    .card-container{
+        display: flex;
+        margin-bottom: 1.5rem;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+    }
+    .card-img{
+        width: 100%;
+        height: 120px;
+        object-fit: cover;
+        display: block;
+        border-radius: 0.5rem;
+    }
+    .card-title{
+        font-weight: 600;
+    }
+    .photo-cards{
+        margin-left: 5rem;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
 ```
 
 ---
@@ -143,10 +162,4 @@ Built with ❤️ using HTML & CSS only.
 
 This project is open-source and available under the **MIT License**.
 
-```
-
----
-
-Would you like me to tailor the README so it specifically documents **your exact HTML structure** (the one with the `#check` input and `#container` div that changes opacity)?  
-That would make it a perfect match to your codebase.
 ```
