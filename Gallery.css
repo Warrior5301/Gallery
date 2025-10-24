@@ -147,8 +147,6 @@
     overflow-y: auto;
     overflow-x: hidden;
 }
-/* (legacy #display-container ID removed) */
-
 .display-container {
     position: fixed;
     background-color: rgba(156, 151, 151, 0.367);
@@ -260,4 +258,5 @@
 #check34:checked ~ #display-container34 .cross-btn{
     opacity: 1;
 }
+
 
